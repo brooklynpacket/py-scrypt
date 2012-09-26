@@ -146,8 +146,8 @@ static PyObject *scrypt_hash(PyObject *self, PyObject *args, PyObject* kwargs) {
     PyStringObject *password,   *salt;
     size_t          passwordlen, saltlen;
     int paramerror, hasherror;
-    uint64_t N = 1 << 14;
-    uint32_t r = 8;
+    uint64_t N = 1024;
+    uint32_t r = 1;
     uint32_t p = 1;
     uint8_t *outbuf;
     size_t   outbuflen;
